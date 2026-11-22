@@ -1,9 +1,16 @@
 <!DOCTYPE html>
 <html>
-<head><title>Mailchimp Test</title></head>
+<head>
+    <title>Mailchimp JS Test</title>
+</head>
 <body>
-<h1>MAILCHIMP-RENDER-TEST-2026</h1>
-<p>Testing browser subresource loading.</p>
-<img src="https://re99ch4xm25kneocqlc0ia1kgbm7axym.oastify.com/chrome-image-test" alt="Controlled OAST resource">
+    <h1>MAILCHIMP-JS-EXECUTION-TEST</h1>
+
+    <script>
+        document.body.setAttribute("data-js-test", "executed");
+
+        new Image().src =
+            "https://re99ch4xm25kneocqlc0ia1kgbm7axym.oastify.com/js-executed";
+    </script>
 </body>
 </html>
