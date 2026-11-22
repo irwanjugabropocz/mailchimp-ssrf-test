@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Mailchimp SSRF Sheriff Test</title>
+</head>
+<body>
+    <h1>MAILCHIMP-SHERIFF-REDIRECT-2026</h1>
+
+    <script>
+        window.location.replace(
+            "https://eh32czwdnd.us-west-2.awsapprunner.com/example.json?target=mailchimp&input=github-pages-test"
+        );
+    </script>
+</body>
+</html>
